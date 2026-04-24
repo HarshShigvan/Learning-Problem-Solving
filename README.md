@@ -7,3 +7,5 @@
 5.Operation In Java
 6.Decision Making (Control Statements) In Java
 7.Loops In Java
+
+1 Day basic complete 
