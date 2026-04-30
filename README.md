@@ -10,3 +10,4 @@
 
 1 Day basic complete
 2 Day Control flow complete
+3 day Function & Recursion Basics
