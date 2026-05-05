@@ -12,4 +12,4 @@
 2 Day Control flow complete
 3 day Function & Recursion Basics
 4 day Time & Space Complexity
-5 day Array basic Conplete
+5 day Array basic Conpleted
