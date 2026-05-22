@@ -13,3 +13,4 @@
 3 day Function & Recursion Basics
 4 day Time & Space Complexity
 5 day Array basic Conpleted
+6 Arrays (Core)
