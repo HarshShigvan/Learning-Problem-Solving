@@ -29,22 +29,43 @@ public class six_day {
 
 
 
+// Scanner sc = new Scanner(System.in);
+// System.out.println("Enter the size of the array: ");
+// int n =sc.nextInt();
+// int []arr = new int[n];
+// System.out.println("Enter the elements of the array: ");
+// for (int i = 0; i<n; i++){
+//   arr[i] = sc.nextInt();
+//   }
+//   int prifix[] = new int[n];
+//   prifix[0] =arr[0];
+
+//   for (int i = 1; i<n; i++) {
+//     prifix[i] = prifix[i-1] + arr[i];
+//   }
+//   for(int i=0; i<n; i++) {
+//     System.out.print(prifix[i] + " ");
+//   }
+
 Scanner sc = new Scanner(System.in);
 System.out.println("Enter the size of the array: ");
-int n =sc.nextInt();
-int []arr = new int[n];
+int n = sc.nextInt();
+int arr[] =new int[n];
 System.out.println("Enter the elements of the array: ");
-for (int i = 0; i<n; i++){
+for (int i = 0; i<n; i++) {
   arr[i] = sc.nextInt();
-  }
-  int prifix[] = new int[n];
-  prifix[0] =arr[0];
+}
+System.out.println("All the subarrays of the array are: " + n *(n+1)/2);
 
-  for (int i = 1; i<n; i++) {
-    prifix[i] = prifix[i-1] + arr[i];
-  }
-  for(int i=0; i<n; i++) {
-    System.out.print(prifix[i] + " ");
+for (int i=0; i<n; i++){
+  for (int j=i; j<n; j++){
+    for (int k=i; k<=j; k++){
+      
+      System.out.print(arr[k] + " ");
+    }
+    System.out.println();
   }
 }
+}
+
 }
