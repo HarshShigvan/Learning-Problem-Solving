@@ -27,31 +27,56 @@ public class seven_day {
   //  System.out.println("Maximum Subarray Sum = " + maxSum);
 
 
-  Scanner sc = new Scanner(System.in);
+//   Scanner sc = new Scanner(System.in);
+// System.out.println("Enter the size of the array: ");
+// int n = sc.nextInt();
+// int arr[] =new int [n];
+// System.out.println("Enter the sorted elements of the array: ");
+// for (int i = 0; i<n; i++) 
+// arr[i] =sc.nextInt();
+
+
+// int left = 0;
+// int right = n-1;
+// System.out.println("Enter the target element: ");
+// int target = sc.nextInt();
+
+// while (left < right){
+//   int sum = arr[left]+ arr[right];
+//   if (sum == target ) {
+//     System.out.println("pair fount : "+ sum + "  " + arr[left] + " " + arr[right]);
+//     break;
+//   }
+//   else if (sum < target){
+//     left++;
+//   } else {
+//     right--;
+//   }
+// }
+
+
+//  Two Pointer Approach to remove duplicates from sorted array
+Scanner sc = new Scanner(System.in);
 System.out.println("Enter the size of the array: ");
 int n = sc.nextInt();
-int arr[] =new int [n];
-System.out.println("Enter the sorted elements of the array: ");
-for (int i = 0; i<n; i++) 
-arr[i] =sc.nextInt();
+int arr[] =new int[n];
+System.out.println("enter the sorted elements of the array: ");
 
+for (int i= 0; i<n; i++){
+  arr[i]=sc.nextInt();
+}
 
-int left = 0;
-int right = n-1;
-System.out.println("Enter the target element: ");
-int target = sc.nextInt();
+int i = 0;
 
-while (left < right){
-  int sum = arr[left]+ arr[right];
-  if (sum == target ) {
-    System.out.println("pair fount : "+ sum + "  " + arr[left] + " " + arr[right]);
-    break;
+for (int j=1; j<n; j++) {
+  if (arr[i] != arr[j]) {
+    i++;
+    arr[i] = arr[j];
   }
-  else if (sum < target){
-    left++;
-  } else {
-    right--;
-  }
+}
+System.out.println("the unique elements in array : ");
+for (int k= 0; k<=i; k++) {
+  System.out.print(arr[k] + " ");
 }
   }
 }
