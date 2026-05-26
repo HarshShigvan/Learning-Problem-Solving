@@ -15,3 +15,4 @@
 5 day Array basic Conpleted
 6 Arrays (Core) completed
 7 Advance Arrays 
+8 Sorted Algorithm
