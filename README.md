@@ -10,9 +10,10 @@
 
 1 Day basic complete
 2 Day Control flow complete
-3 day Function & Recursion Basics
-4 day Time & Space Complexity
-5 day Array basic Conpleted
-6 Arrays (Core) completed
-7 Advance Arrays 
-8 Sorted Algorithm
+3 Day Function & Recursion Basics
+4 Day Time & Space Complexity
+5 Day Array basic Conpleted
+6 Day Arrays (Core) completed
+7 Day Advance Arrays 
+8 Day Sorted Algorithm
+9 Day Efficient Sorting
