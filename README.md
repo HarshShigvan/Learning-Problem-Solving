@@ -14,6 +14,7 @@
 4 Day Time & Space Complexity
 5 Day Array basic Conpleted
 6 Day Arrays (Core) completed
-7 Day Advance Arrays 
+7 Day Advance Arrays
 8 Day Sorted Algorithm
 9 Day Efficient Sorting
+10 Day Binary Search
