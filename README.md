@@ -8,6 +8,13 @@
 6.Decision Making (Control Statements) In Java
 7.Loops In Java
 
+# Data Structure
+
+1 Array
+2 Linked List
+
+# Day Completed
+
 1 Day basic complete
 2 Day Control flow complete
 3 Day Function & Recursion Basics
