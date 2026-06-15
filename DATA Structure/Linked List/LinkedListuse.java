@@ -14,6 +14,11 @@ class LinkedListuse {
     list.add(2, "is");
     System.out.println(list);
 
+//  list.add("ha");
+//        list.add("hii");
+       Collections.reverse(list);
+       System.out.println(list);
+
 
 
 

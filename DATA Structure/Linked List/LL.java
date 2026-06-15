@@ -91,6 +91,37 @@ public int getSize(){
   return size;
 }
 
+ public void reverseList(){
+    if (head == null || head.next == null){
+      return;
+    }
+    Node prevNode = head;
+    Node currentNode = head.next;
+    while(currentNode != null) {
+      Node nextNode = currentNode.next;
+      currentNode.next = prevNode;
+      prevNode = currentNode;
+      currentNode = nextNode;
+    }
+    head.next = null;
+    head = prevNode;
+  }
+
+  public Node reverseListRecursive(Node head) {
+       //empty node || last node or only one node
+       if(head == null || head.next == null) {
+           return head;
+       }
+
+
+       Node newHead = reverseListRecursive(head.next);
+      
+       head.next.next = head;
+       head.next = null;
+       return newHead;
+   }
+
+
   public static void main(String args[]){
     LL list = new LL();
     
@@ -101,18 +132,24 @@ public int getSize(){
 
     list.addFirst("this");
     list.printList();
-    System.out.println(list.getSize());
+    // System.out.println(list.getSize());
 
-    list.removeFirst();
-    list.printList();
+    // list.removeFirst();
+    // list.printList();
 
-    list.removeLast();
-    list.printList();
+    // list.removeLast();
+    // list.printList();
 
-    list.addInMiddle(2, "haaa");
-    list.printList();
+    // list.addInMiddle(2, "haaa");
+    // list.printList();
 
-    
+// list.reverseList();
+// list.printList();
+
+list.head = list.reverseListRecursive(list.head);
+list.printList();
+
+
 
   }
 
